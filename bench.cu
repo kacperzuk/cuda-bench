@@ -42,6 +42,8 @@ __global__ void bench(int n, unsigned int* cache, unsigned int* r) {
 }
 
 int main (int argc, char *argv[]) {
+  setlinebuf(stdout);
+  setlinebuf(stderr);
   if (argc < 2) {
     printf("Provide device number!\n");
     exit(1);
